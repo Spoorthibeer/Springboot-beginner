@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card Toggle</title>
+    <link rel="stylesheet" href="css/site.css">
+    <link rel="stylesheet" href="css/card.css">
+</head>
+<body>
+    <nav> 
+        <ul> 
+            <li><a href="/">Home</a></li> 
+            <li><a href="/card.html">Card</a></li>
+            <li><a href="/toggle.html">Toggle</a></li> 
+            <li><a href="/randomuser.html">RandomUser</a></li>
+         </ul>
+     </nav>
+
+    <div class="card">
+        <img id="user-image" src="img/jane.png" alt="Avatar">
+        <div class="card-content">
+            <h4 id="user-name">Jane Doe</h4>
+            <h5 id="user-gender">Female</h5>
+        </div>
+        <button onclick="toggleUser()">Toggle</button>
+    </div>
+
+    <script src="js/site.js"></script>
+    <script src="js/toggle.js"></script>
+</body>
+</html>
