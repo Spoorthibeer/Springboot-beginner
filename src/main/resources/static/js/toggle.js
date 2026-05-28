@@ -5,12 +5,12 @@ var userArray = [
     {
         "name": "Jane Doe",
         "gender": "Female",
-        "image": "img/jane.png"
+        "image": "/img/jane.png"
     },
     {
         "name": "John Doe",
         "gender": "Male",
-        "image": "img/john.png"
+        "image": "/img/john.png"
     }
 ];
 
@@ -20,7 +20,7 @@ function toggleUser() {
     
     var nextUser = userArray[currentUserIndex];
     
-    // Updates using the kebab-case IDs from your updated toggle.html
+    // Updates the HTML DOM elements
     document.getElementById("user-name").innerText = nextUser.name;
     document.getElementById("user-gender").innerText = nextUser.gender;
     document.getElementById("user-image").src = nextUser.image;

@@ -3,30 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile Card Toggle</title>
+    <title>Random User API</title>
     <link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
 
-    <div class="navbar">
-        <a href="/">Home</a>
-        <a href="/card.html">Card</a>
-        <a href="/toggle.html">Toggle</a>
-        <a href="/randomuser.html">Random User</a>
-    </div>
+     <nav> 
+        <ul> 
+            <li><a href="/">Home</a></li> 
+            <li><a href="/card.html">Card</a></li>
+            <li><a href="/toggle.html">Toggle</a></li> 
+            <li><a href="/randomuser.html">Random User</a></li>
+         </ul>
+     </nav>
 
-    <h1>Hello from HTML</h1>
+    <h2>Random User Generator</h2>
     <div class="card">
         <img id="userImage" src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" style="width:100%">
-        <div class="cardContainer">
-            <h4 id="userName"><b>Jane Doe</b></h4>
+        <div class="container">
+            <h4 id="userName"><b>John Doe</b></h4>
             <p id="userGender">Male</p>
         </div>
     </div>
 
     <button onclick="getAndDisplayNextRandomUser()">Random</button>
 
-    <script src="/js/site.js"></script>
     <script src="/js/randomuser.js"></script>
 </body>
 </html>
